@@ -1,0 +1,1497 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Luckiest+Guy&display=swap');
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(
+            circle at top left,
+            #24104d,
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at bottom right,
+            #052e24,
+            transparent 40%
+        ),
+
+        #070b18;
+
+    color: white;
+
+    font-family: "Fredoka", sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+
+/* ===================== */
+/* BACKGROUND */
+/* ===================== */
+
+
+.bg-shape {
+
+    position: fixed;
+
+    width: 300px;
+
+    height: 300px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.4;
+
+    z-index: -1;
+
+}
+
+
+.shape1 {
+
+    background: #c026d3;
+
+    top: -100px;
+
+    left: -100px;
+
+}
+
+
+.shape2 {
+
+    background: #7CFF00;
+
+    bottom: -100px;
+
+    right: -100px;
+
+}
+
+
+/* ===================== */
+/* HOME */
+/* ===================== */
+
+
+.home-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.top-text {
+
+    color: #b9c0d8;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.crown {
+
+    font-size: 50px;
+
+    animation: float 2s infinite ease-in-out;
+
+}
+
+
+.logo {
+
+    font-family: "Luckiest Guy", cursive;
+
+    font-size: 90px;
+
+    letter-spacing: 3px;
+
+    color: #a8ff00;
+
+    text-shadow:
+
+        0 0 10px #7CFF00,
+
+        0 0 30px #7CFF00;
+
+}
+
+
+.logo span {
+
+    color: #e94cff;
+
+    text-shadow:
+
+        0 0 10px #e94cff,
+
+        0 0 30px #e94cff;
+
+}
+
+
+.tagline {
+
+    font-size: 22px;
+
+    color: #d9d9e8;
+
+    margin-top: 20px;
+
+    line-height: 1.5;
+
+}
+
+
+.snake-home {
+
+    font-size: 150px;
+
+    margin: 15px;
+
+    animation: float 3s infinite ease-in-out;
+
+}
+
+
+.start-btn {
+
+    margin-top: 20px;
+
+    padding: 20px 50px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        90deg,
+        #a8ff00,
+        #d8ff5c
+    );
+
+    color: #081000;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 0 30px #7CFF00;
+
+    transition: 0.3s;
+
+}
+
+
+.start-btn:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+.start-btn span {
+
+    margin-left: 15px;
+
+    font-size: 25px;
+
+}
+
+
+.bottom-text {
+
+    margin-top: 25px;
+
+    color: #a6adc5;
+
+}
+
+
+/* ===================== */
+/* PAGE */
+/* ===================== */
+
+
+.page-container {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+}
+
+
+.mini-logo {
+
+    font-family: "Luckiest Guy", cursive;
+
+    font-size: 35px;
+
+    color: #a8ff00;
+
+}
+
+
+.mini-logo span {
+
+    color: #e94cff;
+
+}
+
+
+.back-btn {
+
+    position: absolute;
+
+    top: 25px;
+
+    left: 25px;
+
+    color: #ffffff;
+
+}
+
+
+.crown-small {
+
+    font-size: 45px;
+
+    margin-top: 20px;
+
+}
+
+
+.page-container h1 {
+
+    margin-top: 10px;
+
+    font-size: 40px;
+
+}
+
+
+.subtitle {
+
+    color: #a9afc5;
+
+    margin-top: 10px;
+
+}
+
+
+/* ===================== */
+/* ADD PLAYER */
+/* ===================== */
+
+
+.add-player-form {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 35px;
+
+}
+
+
+.add-player-form input {
+
+    flex: 1;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    border: 2px solid #334155;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 16px;
+
+}
+
+
+.add-btn {
+
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #a8ff00;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.gang-title {
+
+    margin-top: 40px;
+
+}
+
+
+.players-list {
+
+    margin-top: 20px;
+
+}
+
+
+.player-card {
+
+    background: #111827;
+
+    border: 1px solid #303b55;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    margin-top: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 18px;
+
+}
+
+
+.player-status {
+
+    color: #a8ff00;
+
+    font-size: 13px;
+
+}
+
+
+.need-players {
+
+    margin-top: 20px;
+
+    color: #ffcc00;
+
+}
+
+
+.begin-btn {
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #7b2cff,
+            #e900b8
+        );
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 25px #a500ff;
+
+}
+
+
+/* ===================== */
+/* GAME PAGE */
+/* ===================== */
+
+
+.game-page {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 30px 20px;
+
+}
+
+
+.game-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.question-number {
+
+    color: #b9c0d8;
+
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 8px;
+
+    background: #1e293b;
+
+    border-radius: 20px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+}
+
+
+.progress {
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #7CFF00,
+            #00eaff,
+            #e94cff
+        );
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+
+}
+
+
+/* ===================== */
+/* TURN CARD */
+/* ===================== */
+
+
+.turn-card {
+
+    text-align: center;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    max-width: 500px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #1b1335,
+            #111827
+        );
+
+    border: 1px solid #7b2cff;
+
+    box-shadow:
+
+        0 0 20px rgba(123, 44, 255, 0.3);
+
+}
+
+
+.turn-small {
+
+    color: #a8ff00;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.turn-card h2 {
+
+    margin-top: 10px;
+
+    color: #ffffff;
+
+}
+
+
+.turn-card p {
+
+    color: #a9afc5;
+
+    margin-top: 8px;
+
+}
+
+
+/* ===================== */
+/* QUESTION */
+/* ===================== */
+
+
+.question-card {
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    border-radius: 25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0e172a,
+            #111827
+        );
+
+    border: 2px solid #9d3cff;
+
+    box-shadow:
+
+        0 0 30px rgba(157, 60, 255, 0.3);
+
+}
+
+
+.question-snake {
+
+    font-size: 70px;
+
+    animation: float 3s infinite ease-in-out;
+
+}
+
+
+.question-card h1 {
+
+    font-size: 35px;
+
+    line-height: 1.4;
+
+}
+
+
+.choose-text {
+
+    margin-top: 25px;
+
+    color: #a8ff00;
+
+    font-weight: bold;
+
+}
+
+
+.self-warning {
+
+    margin-top: 10px;
+
+    color: #ffcc00;
+
+    font-size: 14px;
+
+}
+
+
+/* ===================== */
+/* SUSPECTS */
+/* ===================== */
+
+
+.suspects {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(
+            auto-fit,
+            minmax(200px, 1fr)
+        );
+
+    gap: 18px;
+
+    margin-top: 30px;
+
+}
+
+
+.suspect-btn {
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    border: 2px solid #00d9ff;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.suspect-btn:hover {
+
+    transform: translateY(-5px);
+
+    background: #17223b;
+
+    box-shadow:
+
+        0 0 20px #00d9ff;
+
+}
+
+
+.person-icon {
+
+    margin-right: 10px;
+
+}
+
+
+.sus-text {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #ff4ee8;
+
+}
+
+
+.friendship-warning {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    color: #a9afc5;
+
+}
+
+
+/* ===================== */
+/* REVEAL */
+/* ===================== */
+
+
+.reveal-body {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+}
+
+
+.reveal-container {
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+.analysis-text {
+
+    color: #ff4ee8;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+}
+
+
+.loading-snake {
+
+    font-size: 120px;
+
+    margin-top: 30px;
+
+    animation: shake 1s infinite;
+
+}
+
+
+.reveal-container h1 {
+
+    margin-top: 20px;
+
+    font-size: 40px;
+
+}
+
+
+#reveal-message {
+
+    margin-top: 20px;
+
+    color: #a9afc5;
+
+}
+
+
+#countdown {
+
+    margin-top: 30px;
+
+    font-family: "Luckiest Guy";
+
+    font-size: 160px;
+
+    color: #a8ff00;
+
+    text-shadow:
+
+        0 0 30px #7CFF00;
+
+    animation: pop 1s infinite;
+
+}
+
+
+.reveal-small {
+
+    margin-top: 20px;
+
+    color: #e94cff;
+
+}
+
+
+/* ===================== */
+/* RESULT */
+/* ===================== */
+
+
+.result-container {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+.result-top {
+
+    color: #ff4ee8;
+
+    letter-spacing: 2px;
+
+}
+
+
+.winner-snake {
+
+    font-size: 150px;
+
+    margin-top: 20px;
+
+    animation: float 3s infinite ease-in-out;
+
+}
+
+
+.snake-is {
+
+    color: #a9afc5;
+
+    letter-spacing: 3px;
+
+}
+
+
+.winner-name {
+
+    font-family: "Luckiest Guy";
+
+    font-size: 80px;
+
+    margin-top: 10px;
+
+    color: #a8ff00;
+
+    text-shadow:
+
+        0 0 25px #7CFF00;
+
+}
+
+
+.sus-score {
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #ffffff;
+
+}
+
+
+.snake-level {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 30px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #e94cff,
+            #a855f7
+        );
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+}
+
+
+.scores-box {
+
+    margin-top: 40px;
+
+    background: #111827;
+
+    border: 1px solid #334155;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+}
+
+
+.scores-box h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.score-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    background: #172033;
+
+    border-radius: 12px;
+
+}
+
+
+/* ===================== */
+/* PUNISHMENT */
+/* ===================== */
+
+
+.punishment-box {
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #2b1644,
+            #151b30
+        );
+
+    border: 2px solid #ffcc00;
+
+}
+
+
+.punishment-box h2 {
+
+    margin-top: 15px;
+
+    color: #ffdf52;
+
+}
+
+
+.punishment-small {
+
+    margin-top: 15px;
+
+    color: #a9afc5;
+
+}
+
+
+/* ===================== */
+/* BUTTONS */
+/* ===================== */
+
+
+.result-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    margin-top: 35px;
+
+}
+
+
+.play-again-btn {
+
+    padding: 18px 30px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #a8ff00;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+.new-gang-btn {
+
+    padding: 18px 30px;
+
+    border: 2px solid #a855f7;
+
+    border-radius: 50px;
+
+    background: transparent;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* ===================== */
+/* ANIMATIONS */
+/* ===================== */
+
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes shake {
+
+    0% {
+
+        transform: rotate(-10deg);
+
+    }
+
+    50% {
+
+        transform: rotate(10deg);
+
+    }
+
+    100% {
+
+        transform: rotate(-10deg);
+
+    }
+
+}
+
+
+@keyframes pop {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.2);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+
+@media (max-width: 600px) {
+
+
+    .logo {
+
+        font-size: 60px;
+
+    }
+
+
+    .winner-name {
+
+        font-size: 55px;
+
+    }
+
+
+    .question-card h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .game-top {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .add-player-form {
+
+        flex-direction: column;
+
+    }
+
+
+    .result-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+}
+/* =========================
+   SUPER START GAME BUTTON
+========================= */
+
+.start-link {
+    text-decoration: none;
+}
+
+
+.start-game-btn {
+
+    position: relative;
+
+    width: 320px;
+
+    padding: 20px 30px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    background: linear-gradient(
+        135deg,
+        #00f5a0,
+        #00c6ff,
+        #8b5cf6,
+        #ff4ecd
+    );
+
+    background-size: 300% 300%;
+
+    animation: gradientMove 5s ease infinite,
+               buttonPulse 2s infinite;
+
+    box-shadow:
+
+        0 0 15px #00f5a0,
+
+        0 0 30px #00c6ff,
+
+        0 0 50px #ff4ecd;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.btn-icon {
+
+    margin-right: 12px;
+
+    font-size: 24px;
+
+}
+
+
+.arrow {
+
+    margin-left: 15px;
+
+    font-size: 28px;
+
+}
+
+
+.start-game-btn:hover {
+
+    transform:
+
+        translateY(-6px)
+
+        scale(1.05);
+
+    box-shadow:
+
+        0 0 25px #00f5a0,
+
+        0 0 50px #00c6ff,
+
+        0 0 80px #ff4ecd;
+
+}
+
+
+.start-game-btn:active {
+
+    transform:
+
+        scale(0.95);
+
+}
+
+
+/* Moving gradient */
+
+@keyframes gradientMove {
+
+    0% {
+
+        background-position:
+        0% 50%;
+
+    }
+
+    50% {
+
+        background-position:
+        100% 50%;
+
+    }
+
+    100% {
+
+        background-position:
+        0% 50%;
+
+    }
+
+}
+
+
+/* Pulsing glow */
+
+@keyframes buttonPulse {
+
+    0% {
+
+        box-shadow:
+
+        0 0 15px #00f5a0,
+
+        0 0 30px #00c6ff;
+
+    }
+
+    50% {
+
+        box-shadow:
+
+        0 0 30px #00f5a0,
+
+        0 0 60px #ff4ecd,
+
+        0 0 90px #8b5cf6;
+
+    }
+
+    100% {
+
+        box-shadow:
+
+        0 0 15px #00f5a0,
+
+        0 0 30px #00c6ff;
+
+    }
+
+}
+/* =========================
+   GAME WARNING SECTION
+========================= */
+
+.game-warning {
+
+    margin-top: 45px;
+
+    text-align: center;
+
+    animation:
+        fadeUp 1.5s ease;
+
+}
+
+
+.warning-line {
+
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #ff4ecd;
+
+    background:
+
+        rgba(255, 78, 205, 0.1);
+
+    border:
+
+        1px solid #ff4ecd;
+
+    box-shadow:
+
+        0 0 20px
+        rgba(255, 78, 205, 0.4);
+
+}
+
+
+.game-warning h2 {
+
+    margin-top: 20px;
+
+    font-size: 25px;
+
+    color: white;
+
+    letter-spacing: 1px;
+
+}
+
+
+.game-warning h2 span {
+
+    color: #00f5a0;
+
+    text-shadow:
+
+        0 0 10px #00f5a0,
+
+        0 0 25px #00f5a0;
+
+}
+
+
+.game-warning p {
+
+    color: #b9b9c9;
+
+    font-size: 15px;
+
+}
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}

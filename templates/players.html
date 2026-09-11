@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SUSMATE - Gang 🐍</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="page-container">
+
+
+    <a href="/" class="back-btn">
+
+        ← BACK
+
+    </a>
+
+
+    <div class="mini-logo">
+
+        SUS<span>MATE</span>
+
+    </div>
+
+
+    <div class="crown-small">
+
+        👑
+
+    </div>
+
+
+    <h1>
+
+        WHO'S IN THE GANG?
+
+    </h1>
+
+
+    <p class="subtitle">
+
+        Add your friends and start the madness! 😈
+
+    </p>
+
+
+    <form method="POST"
+          class="add-player-form">
+
+
+        <input
+
+            type="text"
+
+            name="name"
+
+            placeholder="Enter friend's name..."
+
+            required
+
+        >
+
+
+        <button type="submit"
+                class="add-btn">
+
+            + ADD FRIEND
+
+        </button>
+
+
+    </form>
+
+
+    <h2 class="gang-title">
+
+        ⚡ GANG MEMBERS ⚡
+
+    </h2>
+
+
+    <div class="players-list">
+
+
+        {% for player in players %}
+
+
+        <div class="player-card">
+
+            <span>
+
+                👤 {{ player }}
+
+            </span>
+
+
+            <span class="player-status">
+
+                READY 🔥
+
+            </span>
+
+        </div>
+
+
+        {% endfor %}
+
+
+    </div>
+
+
+    {% if players|length < 3 %}
+
+
+        <p class="need-players">
+
+            Add at least 3 friends to begin 👀
+
+        </p>
+
+
+    {% endif %}
+
+
+    {% if players|length >= 3 %}
+
+
+        <a href="/start-game">
+
+            <button class="begin-btn">
+
+                🎮 LET THE SUSPICION BEGIN
+
+                →
+
+            </button>
+
+        </a>
+
+
+    {% endif %}
+
+
+</div>
+
+
+</body>
+
+</html>

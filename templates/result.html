@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>The Snake 🐍</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="result-container">
+
+
+    <div class="result-top">
+
+        🚨 THE GANG HAS SPOKEN 🚨
+
+    </div>
+
+
+    <div class="winner-snake">
+
+        🐍
+
+    </div>
+
+
+    <p class="snake-is">
+
+        THE SNAKE IS...
+
+    </p>
+
+
+    <h1 class="winner-name">
+
+        {{ snake }}
+
+    </h1>
+
+
+    <p class="sus-score">
+
+        {{ snake_score }}
+
+        SUS POINTS
+
+    </p>
+
+
+    <div class="snake-level">
+
+        👑 {{ snake_level }}
+
+    </div>
+
+
+    <!-- FINAL SCORES -->
+
+    <div class="scores-box">
+
+
+        <h2>
+
+            📊 FINAL SCORES
+
+        </h2>
+
+
+        {% for player, score in scores.items() %}
+
+
+        <div class="score-row">
+
+
+            <span>
+
+                👤 {{ player }}
+
+            </span>
+
+
+            <span>
+
+                {{ score }} SUS
+
+            </span>
+
+
+        </div>
+
+
+        {% endfor %}
+
+
+    </div>
+
+
+    <!-- PUNISHMENT -->
+
+    <div class="punishment-box">
+
+
+        <p>
+
+            ⚠️ PUNISHMENT TIME
+
+        </p>
+
+
+        <h2>
+
+            {{ punishment }}
+
+        </h2>
+
+
+        <p class="punishment-small">
+
+            Good luck, Snake! 😂🐍
+
+        </p>
+
+
+    </div>
+
+
+    <!-- BUTTONS -->
+
+    <div class="result-buttons">
+
+
+        <a href="/play-again">
+
+            <button class="play-again-btn">
+
+                🔄 PLAY AGAIN
+
+            </button>
+
+        </a>
+
+
+        <a href="/new-gang">
+
+            <button class="new-gang-btn">
+
+                👥 NEW GANG
+
+            </button>
+
+        </a>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

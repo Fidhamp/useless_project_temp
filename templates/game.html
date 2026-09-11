@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SUSMATE Game 🐍</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="game-page">
+
+
+    <!-- TOP LOGO -->
+
+    <div class="game-top">
+
+        <div class="mini-logo">
+
+            SUS<span>MATE</span>
+
+        </div>
+
+
+        <div class="question-number">
+
+            QUESTION
+
+            {{ question_number + 1 }}
+
+            OF
+
+            {{ total_questions }}
+
+        </div>
+
+    </div>
+
+
+    <!-- PROGRESS BAR -->
+
+    <div class="progress-bar">
+
+        <div
+
+            class="progress"
+
+            style="width: {{ ((question_number + 1) / total_questions) * 100 }}%">
+
+        </div>
+
+    </div>
+
+
+    <!-- TURN CARD -->
+
+    <div class="turn-card">
+
+
+        <p class="turn-small">
+
+            🎤 CURRENT TURN
+
+        </p>
+
+
+        <h2>
+
+            👤 {{ current_player }}'S TURN
+
+        </h2>
+
+
+        <p>
+
+            Turn {{ turn_number }}
+
+            of
+
+            {{ total_players }}
+
+        </p>
+
+
+    </div>
+
+
+    <!-- QUESTION -->
+
+    <div class="question-card">
+
+
+        <div class="question-snake">
+
+            🐍
+
+        </div>
+
+
+        <h1>
+
+            {{ question }}
+
+        </h1>
+
+
+        <p class="choose-text">
+
+            WHO DO YOU SUSPECT? 👀
+
+        </p>
+
+
+        <p class="self-warning">
+
+            🚫 You cannot choose yourself!
+
+        </p>
+
+
+    </div>
+
+
+    <!-- SUSPECT BUTTONS -->
+
+    <form
+
+        action="/game"
+
+        method="POST"
+
+
+        class="suspect-form">
+
+
+        <div class="suspects">
+
+
+            {% for player in suspects %}
+
+
+            <button
+
+                type="submit"
+
+                name="suspect"
+
+                value="{{ player }}"
+
+                class="suspect-btn">
+
+
+                <span class="person-icon">
+
+                    👤
+
+                </span>
+
+
+                {{ player }}
+
+
+                <span class="sus-text">
+
+                    SUS 👀
+
+                </span>
+
+
+            </button>
+
+
+            {% endfor %}
+
+
+        </div>
+
+
+    </form>
+
+
+    <p class="friendship-warning">
+
+        😈 Choose carefully...
+        Your friendship depends on it!
+
+    </p>
+
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Analyzing... 🐍</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body class="reveal-body">
+
+
+<div class="reveal-container">
+
+
+    <div class="analysis-text">
+
+        🚨 SUSPICION ANALYSIS COMPLETE 🚨
+
+    </div>
+
+
+    <div class="loading-snake">
+
+        🐍
+
+    </div>
+
+
+    <h1>
+
+        ANALYZING THE GANG...
+
+    </h1>
+
+
+    <p id="reveal-message">
+
+        Checking suspicious behaviour... 👀
+
+    </p>
+
+
+    <div id="countdown">
+
+        3
+
+    </div>
+
+
+    <p class="reveal-small">
+
+        The gang has spoken...
+
+    </p>
+
+
+</div>
+
+
+<script>
+
+
+let count = 3;
+
+
+let countdown = document.getElementById("countdown");
+
+
+let message = document.getElementById("reveal-message");
+
+
+let timer = setInterval(function() {
+
+
+    if (count > 1) {
+
+
+        count--;
+
+
+        countdown.innerHTML = count;
+
+
+        if (count == 2) {
+
+            message.innerHTML = "Scanning suspicious behaviour... 🔍";
+
+        }
+
+
+        if (count == 1) {
+
+            message.innerHTML = "TOO MUCH SUS DETECTED! 🚨";
+
+        }
+
+
+    }
+
+
+    else {
+
+
+        clearInterval(timer);
+
+
+        countdown.innerHTML = "🐍";
+
+
+        message.innerHTML = "SNAKE FOUND!!!";
+
+
+        setTimeout(function() {
+
+            window.location.href = "/result";
+
+        }, 1500);
+
+
+    }
+
+
+}, 1500);
+
+
+</script>
+
+
+</body>
+
+</html>
