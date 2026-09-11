@@ -4,19 +4,18 @@
 
 # SUSMATE 🐍
 
-SUSMATE is a party game that helps a group discover who is the most suspicious.
+SUSMATE is a fun interactive  game that helps a group discover who is the most suspicious.
 
 
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [She squad]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [Fathima Fidha] - [kmea engineering college]
+- Member 2: [Nehrin A] - [kmea engineering college]
 
 ### Project Description
 [2-3 lines about what your project does]
