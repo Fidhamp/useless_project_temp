@@ -6,17 +6,7 @@
 
 SUSMATE is a party game that helps a group discover who is the most suspicious.
 
-## GitHub Pages
 
-The GitHub Pages version is a fully static site. Open `index.html` locally or enable GitHub Pages for the repository root; no Flask server is required. Player names are kept in the browser's local storage.
-
-## Run Locally With Flask
-
-```bash
-python app.py
-```
-
-The original Flask templates are still available for local server use. GitHub Pages uses `index.html` and `static/game.js` instead.
 
 
 ## Basic Details
