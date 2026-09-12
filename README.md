@@ -49,13 +49,13 @@ python app.py]
 SUSMATE is a fun interactive web application where friends answer funny questions and vote for the most suspicious person. The application calculates SUS scores and reveals the group's certified snake
 
 # Screenshots (Add at least 3)
-![Home page](home_page.png)
+![Home page](/home_page.png)
 *The SUSMATE home page welcomes players to the game and allows them to start their suspicious adventure!*
 
-![Game question](game_question.png)
+![Game question](/game_question.png)
 *players answer funny questions and vote for the friend they find the most suspicious*
 
-![snake reveal](snake_reveal.png)
+![snake reveal](/snake_reveal.png)
 *the application calculates the sus scores and dramatically reveals the most suspicious person as the certified snake!*
 
 # Diagrams
