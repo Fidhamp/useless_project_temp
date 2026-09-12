@@ -59,8 +59,27 @@ SUSMATE is a fun interactive web application where friends answer funny question
 *the application calculates the sus scores and dramatically reveals the most suspicious person as the certified snake!*
 
 # Diagrams
-![Work flow](work_flow.png)
-*The workflow diagram shows how SUSMATE works from start to finish. Players first enter their names and start the game. They then answer funny and suspicious questions by voting for their friends. The system calculates SUS scores based on the votes, identifies the player with the highest score, and dramatically reveals them as the Certified Snake. Finally, a random fun punishment is generated and players can start a new game.*
+```mermaid
+flowchart TD
+	A[Open SUSMATE] --> B[Start the game]
+	B --> C[Add player names]
+	C --> D{At least 3 players?}
+	D -- No --> C
+	D -- Yes --> E[Begin suspicion]
+	E --> F[Show question and current player's turn]
+	F --> G[Choose a suspect]
+	G --> H[Add 10 SUS points]
+	H --> I{All questions and turns complete?}
+	I -- No --> F
+	I -- Yes --> J[Show suspense reveal]
+	J --> K[Find player with highest score]
+	K --> L[Display Certified Snake and scores]
+	L --> M[Generate a fun punishment]
+	M --> N{Play again or start a new gang?}
+	N -- Play again --> E
+	N -- New gang --> B
+```
+*The workflow shows how players are added, how each vote increases a SUS score, and how the highest-scoring player is revealed as the Certified Snake.*
 
 
 
