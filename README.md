@@ -6,6 +6,10 @@
 
 SUSMATE is a fun interactive  game that helps a group discover who is the most suspicious.
 
+### Project Demo
+# Video
+[https://drive.google.com/file/d/1XURruuOkSea3le5aMWyJkqAHda7-tGGd/view?usp=sharing]
+*The workflow diagram shows how SUSMATE works from start to finish. Players first enter their names and start the game. They then answer funny and suspicious questions by voting for their friends. The system calculates SUS scores based on the votes, identifies the player with the highest score, and dramatically reveals them as the Certified Snake. Finally, a random fun punishment is generated and players can start a new game.*
 
 
 
