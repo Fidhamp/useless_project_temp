@@ -18,66 +18,70 @@ SUSMATE is a fun interactive  game that helps a group discover who is the most s
 - Member 2: [Nehrin A] - [kmea engineering college]
 
 ### Project Description
-[2-3 lines about what your project does]
+[ SUSMATE is a fun interactive web application where friends answer funny questions and vote for the most suspicious person in their group. Based on the votes, the app calculates a SUS score, reveals the "Certified Snake," and gives them a fun harmless punishment.]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[Friend groups have a serious problem: everyone claims to be innocent, but nobody knows who the real snake is! SUSMATE solves this completely unnecessary crisis by analyzing suspicious votes and exposing the most SUS person in the group.]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[SUSMATE bravely tackles this completely unnecessary crisis! Friends answer ridiculous questions, vote for the most suspicious person, and our system calculates their SUS score to finally expose the group's Certified Snake followed by a fun punishment they definitely didn't ask for!]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- Languages used: Python, HTML, CSS
+- Frameworks used: Flask
+- Libraries used: random
+- Tools used: VS Code, GitHub
 
 ### Implementation
 For Software:
+SUSMATE is implemented as a Python-based web application using the Flask framework. The frontend is developed using HTML and CSS, while Python handles the game logic, question selection, SUS-score calculation, and final snake-friend detection. The random library is used to introduce random questions and outcomes.
 # Installation
-[commands]
+[```bash
+pip install flask]
 
 # Run
-[commands]
+[```bash
+python app.py]
 
 ### Project Documentation
-For Software:
+SUSMATE is a fun interactive web application where friends answer funny questions and vote for the most suspicious person. The application calculates SUS scores and reveals the group's certified snake
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Home page](home_page.png)
+*The SUSMATE home page welcomes players to the game and allows them to start their suspicious adventure!*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Game question](game_question.png)
+*players answer funny questions and vote for the friend they find the most suspicious*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![snake reveal](snake_reveal.png)
+*the application calculates the sus scores and dramatically reveals the most suspicious person as the certified snake!*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Work flow](work_flow.png)
+*The workflow diagram shows how SUSMATE works from start to finish. Players first enter their names and start the game. They then answer funny and suspicious questions by voting for their friends. The system calculates SUS scores based on the votes, identifies the player with the highest score, and dramatically reveals them as the Certified Snake. Finally, a random fun punishment is generated and players can start a new game.*
 
 
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
+[https://drive.google.com/file/d/1XURruuOkSea3le5aMWyJkqAHda7-tGGd/view?usp=sharing]
+*The workflow diagram shows how SUSMATE works from start to finish. Players first enter their names and start the game. They then answer funny and suspicious questions by voting for their friends. The system calculates SUS scores based on the votes, identifies the player with the highest score, and dramatically reveals them as the Certified Snake. Finally, a random fun punishment is generated and players can start a new game.*
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [fathima fidha mp]: [Game Logic & Python Development*
+
+* Developed the core game logic using Python.
+* Created the questions, answer options, and scoring system.
+* Implemented the snake-friend detection and final result generation.
+* Tested the functionality and fixed errors.]
+- [Nehrin.A]: [UI/Design & User Experience*
+
+* Designed the app interface and overall appearance.
+* Created the start screen, friend-name input, question screen, and result screen.
+* Worked on the funny messages, punishments, and visual presentation.
+* Assisted with testing and project documentation.]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
